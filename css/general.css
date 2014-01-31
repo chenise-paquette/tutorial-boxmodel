@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+/* Control the sixe of the viewport */
+@-moz-viewport { width: device-width; scale: 1; } /* for firefox */
+@-ms-viewport { width: device-width; scale: 1; } /* internet explorer */
+@-o-viewport { width: device-width; scale: 1; } /* for opra */
+@-webkit-viewport { width: device-width; scale: 1; } /* Safari & Chrome */
+@viewport { width: device-width; scale: 1; } /* W3C standard */
+
+
+/* Adjust padding so it draws on the box interior */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html { 
+    
+    /* Control the zoom of the type on mobile */
+    
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    
+/* Controls typorgraphy size on mobile and desktop */
+    
+    font-size: 100%; /* 100%=16px=1rem */
+}
+
+img { /* Images are responsive */
+	width: 100%;
+    display: block;
+}
